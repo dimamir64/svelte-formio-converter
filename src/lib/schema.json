@@ -1,0 +1,316 @@
+{
+  "display": "form",
+  "components": [
+    {
+      "html": "<h2>PHQ-9 (Extended Version)</h2>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false
+    },
+    {
+      "html": "<p>For diagnosing and monitoring patients with low mood, depression, or bipolar disorder with depressive symptoms. Consider combining this form with Ocean's Depression focused history questionnaire to take a complete depression visit history.</p>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false,
+      "key": "tagline"
+    },
+    {
+      "html": "<p style=\"font-size: 14px; color: #555;\">For diagnosing and monitoring patients with low mood, depression, or bipolar disorder with depressive symptoms. PHQ9 Copyright Pfizer Inc. PRIME-MD is a trademark of Pfizer Inc.</p>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false,
+      "hidden": true,
+      "key": "desc"
+    },
+    {
+      "html": "<p style=\"font-size: 14px; color: #555;\">depression depressed mood low mood sadness crying dysthymia PHQ9 Patient Health Questionnaire bipolar BPD MDD MDE Beck Depression Inventory BDI</p>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false,
+      "hidden": true,
+      "key": "keywords"
+    },
+    {
+      "html": "<div class=\"d-flex gap-2 mb-4\"><span class=\"badge text-bg-primary\">PSYCHIATRY</span><span class=\"badge text-bg-primary\">FAMILY_MEDICINE</span></div>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false,
+      "key": "tags"
+    },
+    {
+      "html": "<p class=\"fs-6 lead\">Patient Health Questionnaire (PHQ-9)</p>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false,
+      "key": "c1"
+    },
+    {
+      "html": "<p class=\"fs-6 lead\">Over the last two weeks, how often have you been bothered by any of the following symptoms?</p>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false,
+      "key": "over_the_last_two_weeks"
+    },
+    {
+      "label": "1. Little interest or pleasure in doing things",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q1",
+      "description": "Anhedonia: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "2. Feeling down, depressed, or hopeless",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q2",
+      "description": "Low mood: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "3. Trouble falling or staying asleep, or sleeping too much",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q3",
+      "description": "Sleep problems: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "4. Feeling tired or having little energy",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q4",
+      "description": "Fatigue: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "5. Poor appetite or overeating",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q5",
+      "description": "Appetite problems: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q6",
+      "description": "Guilt: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "7. Trouble concentrating on things, such as reading the newspaper or watching television",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q7",
+      "description": "Difficulty concentrating: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "8. Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q8",
+      "description": "Psychomotor changes: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "9. Thoughts that you would be better off dead, or of hurting yourself in some way",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not at all", "value": "Not at all" },
+          { "label": "Several days", "value": "Several days" },
+          {
+            "label": "More than half the days",
+            "value": "More than half the days"
+          },
+          { "label": "Nearly every day", "value": "Nearly every day" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q9",
+      "description": "Thoughts of being 'better off dead' or hurting self: ",
+      "validate": { "required": true }
+    },
+    {
+      "label": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "Not difficult at all", "value": "Not difficult at all" },
+          { "label": "Somewhat difficult", "value": "Somewhat difficult" },
+          { "label": "Very difficult", "value": "Very difficult" },
+          { "label": "Extremely difficult", "value": "Extremely difficult" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "q10",
+      "description": "Ability to function:",
+      "validate": { "required": true }
+    },
+    {
+      "label": "In the past 2 years have you felt depressed or sad most days, even if you felt okay sometimes?",
+      "widget": "choicesjs",
+      "tableView": true,
+      "data": {
+        "values": [
+          { "label": "No", "value": "No" },
+          { "label": "Not sure", "value": "Not Sure" },
+          { "label": "Yes", "value": "Yes" }
+        ]
+      },
+      "type": "select",
+      "input": true,
+      "key": "sad_2_years",
+      "description": "Depressed thoughts on most days in the past 2 years:",
+      "validate": { "required": true }
+    },
+    {
+      "label": "Have you had any thoughts of harming yourself lately?",
+      "optionsLabelPosition": "right",
+      "inline": false,
+      "tableView": false,
+      "type": "radio",
+      "input": true,
+      "values": [
+        { "label": "Having recent thoughts of self-harm.", "value": "posNote" },
+        { "label": "No recent thoughts of self-harm.", "value": "negNote" }
+      ],
+      "description": "Thoughts of self-harm",
+      "validate": { "required": true }
+    },
+    {
+      "html": "<div class=\"mt-3\"><div>Refs</div><div class=\"mt-2\"><a href=\"http://www.agencymeddirectors.wa.gov/files/AssessmentTools/14-PHQ-9%20overview.pdf\" target=\"_blank\">PHQ-9 Scoring Instructions</a></div><div class=\"mt-2\"><a href=\"https://phqscreeners.pfizer.edrupalgardens.com/sites/g/files/g10016261/f/201412/instructions.pdf\" target=\"_blank\">Pfizer - PHQ-9 Instructions</a></div></div>",
+      "label": "Content",
+      "refreshOnChange": false,
+      "type": "content",
+      "input": false,
+      "tableView": false,
+      "key": "refs"
+    }
+  ]
+}
